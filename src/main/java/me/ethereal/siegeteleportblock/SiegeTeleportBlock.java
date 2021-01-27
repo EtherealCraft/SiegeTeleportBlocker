@@ -8,7 +8,7 @@ public final class SiegeTeleportBlock extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+        System.out.println("Hello World!");
     }
 
     @Override
