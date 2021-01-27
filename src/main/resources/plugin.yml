@@ -1,0 +1,6 @@
+name: SiegeTeleportBlock
+version: "1.0"
+main: me.ethereal.siegeteleportblock.SiegeTeleportBlock
+api-version: 1.16
+authors: [ Bit ]
+depend: EssentialsX
