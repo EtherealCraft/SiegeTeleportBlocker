@@ -3,4 +3,13 @@ version: "1.0"
 main: me.ethereal.siegeteleportblock.SiegeTeleportBlock
 api-version: 1.16
 authors: [ Bit ]
-depend: [ Essentials, Towny, SiegeWar ]
+depend: [ SiegeWar ]
+
+commands:
+  stb:
+    Permission: stb.admin
+
+
+permissions:
+  stb.admin:
+    default: op

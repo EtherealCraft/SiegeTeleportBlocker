@@ -1,0 +1,9 @@
+# Welcome to the fancy Siege Teleport Block config!
+
+# How close can someone teleport to a siege in blocks?
+max-teleport-radius: 100
+
+# What message should we send if it's too close?
+# {radius} is a placeholder for the above value
+# Only vanilla color codes with & supported
+deny-message: "&cThat teleport location is too close to an active siege flag! It needs to be at least {radius} blocks away."
