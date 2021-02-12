@@ -2,6 +2,7 @@ package me.ethereal.siegeteleportblock;
 
 import com.gmail.goosius.siegewar.SiegeController;
 import com.gmail.goosius.siegewar.objects.Siege;
+import com.gmail.goosius.siegewar.playeractions.PlayerDeath;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
@@ -44,8 +45,10 @@ public class MainListener implements Listener {
         }
     }
 
-    private boolean isTooCloseToSiege(Location homeLocation, Location siegeLocation) {
-        return siegeLocation.distance(homeLocation) <= radius;
+    private boolean isTooCloseToSiege(Location teleportLocation, Location siegeLocation) {
+        if (!teleportLocation.getWorld().equals(siegeLocation))
+            return false;
+        return siegeLocation.distance(teleportLocation) <= radius;
     }
 
     public void onReload(SiegeTeleportBlock plugin) {
